@@ -81,11 +81,3 @@
 | Використання змінних у стилях   | `p { color: var(--main-color); font-size: var(--font-size); }` |
 
 
-------------------
-
-## 🔹 Додаткові ресурси 📚
-
-- 📖 [MDN CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS) – Один з найкращих ресурсів для вивчення CSS, який надає детальні приклади та пояснення.
-- 💻 [CSS-Tricks](https://css-tricks.com/) – Великий сайт, що містить безліч статей, підручників і практичних порад по CSS.
-- 📖 [W3Schools CSS Tutorial](https://www.w3schools.com/css/) – Простий для початківців ресурс для вивчення CSS з інтерактивними прикладами.
-- 🖼 [CSS Zen Garden](http://www.csszengarden.com/) – Дослідження CSS через дизайнерські проекти, що показує силу CSS для створення різних стилів веб-сторінок.
