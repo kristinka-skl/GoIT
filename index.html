@@ -4,28 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIMPLY CHOCOLATE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  
+  <link rel="stylesheet" href="./styles/styles.css">
+
 </head>
 <body>
-  <header>
-    <a href="./index.html"><span>SIMPLY</span> CHOCOLATE <img src="./images/icons/chocolate-icon.svg" alt="logo"></a>
-    <ul>
-      <li>
+  <header class="header">
+    <a class="header-logo" href="./index.html"><span>SIMPLY</span> CHOCOLATE <img src="./images/icons/chocolate-icon.svg" alt="logo"></a>
+    <ul class="header-list-nav">
+      <li class="header-nav-item">
         <a href="./index.html">Home</a>
       </li>
-      <li>
+      <li class="header-nav-item">
         <a href="#made">How it’s made?</a>
       </li>
-      <li>
+      <li class="header-nav-item">
         <a href="#loved">Chocolate is loved</a>
       </li>
     </ul>
-    <ul>
-      <li>
+    <ul class="header-list-socials">
+      <li class="header-socials-item">
         <a href="https://www.instagram.com/" target="_blank">
           <img src="./images/icons/instagram.svg" alt="instagram icon">
         </a>        
       </li>
-      <li>
+      <li class="header-socials-item">
         <a href="https://twitter.com/" target="_blank">
           <img src="./images/icons/twitter.svg" alt="twitter icon">
         </a>
@@ -34,7 +41,7 @@
   </header>
   <main>
     <!-- #region main banner -->
-    <section>
+    <section class="section main">
       <h1>
         Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
       </h1>
@@ -48,7 +55,7 @@
     <!-- #endregion main banner -->
     
     <!-- #region benefits -->
-    <section>
+    <section class="section benefits">
       <h2 hidden>Benefits</h2>
       <ul>
         <li>
@@ -80,7 +87,7 @@
     <!-- #endregion benefits -->
 
     <!-- #region sensation -->
-    <section>
+    <section class="section sensation">
       <h2>
         It all adds up to one exceptional <span>taste</span> sensation
       </h2>
@@ -117,7 +124,7 @@
     <!-- #endregion sensation -->
 
     <!-- #region made -->
-    <section id="made">
+    <section id="made" class="section made">
       <h2>
         How it’s <span>made?</span> 
       </h2>
@@ -151,7 +158,7 @@
     <!-- #endregion made -->
 
     <!-- #region is loved -->
-    <section id="loved">
+    <section id="loved" class="section loved">
       <h2>
         <span>Chocolate</span> is loved
       </h2>
@@ -177,7 +184,7 @@
     <!-- #endregion is loved -->
 
   </main> 
-  <footer id="footer">
+  <footer id="footer" class="footer">
       <div>
         <p>
           <span>Chocolate</span> a delicious cure for a bad day

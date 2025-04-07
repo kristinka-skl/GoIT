@@ -1,0 +1,87 @@
+/* base styles */
+
+:root {
+    
+}
+
+.element:hover, .element:focus {}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.section {
+    
+}
+
+/* main styles */
+
+
+.header {
+
+}
+
+.header-logo {
+    
+}
+
+.header-list-nav {
+    
+}
+
+.header-nav-item {
+    
+}
+
+.header-list-socials {
+
+}
+
+.header-socials-item {
+
+}
+
+/* hero */
+
+.hero {
+    
+}
+
+/* benefits */
+
+.benefits {
+
+}
+
+/* sensation */
+
+.sensation {
+
+}
+
+/* made */
+
+.made {
+
+}
+
+/* loved */
+
+.loved {
+
+}
+
+/* footer */
+
+.footer {
+
+}
+
+
+
+
+
