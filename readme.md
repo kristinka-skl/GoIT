@@ -17,22 +17,22 @@
 
 ## 🔹 3. Властивості оформелння тексту 
 
-text-align
-text-decoration
-text-transform
-text-indent
-line-height
-letter-spacing
-word-spacing
-text-shadow
-Сімейства шрифту serif та sans-serif
+- text-align
+- text-decoration
+- text-transform
+- text-indent
+- line-height
+- letter-spacing
+- word-spacing
+- text-shadow
+- Сімейства шрифту serif та sans-serif
 
-Властивості оформлення шрифту:
+- Властивості оформлення шрифту:  
 
-font-size
-font-weight
-font-style
-font-family
+- font-size
+- font-weight
+- font-style
+- font-family
 
 ## 🔹 4. CSS змінні
 
