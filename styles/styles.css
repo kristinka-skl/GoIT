@@ -3,11 +3,11 @@
     --primary-font: "Montserrat", sans-serif;
 
     /* Colors */
-    --primary-color: "#111111";
-    --secondary-color: "#1E1823";
-    --accent-color: "#FD9222";
-    --additional-color: "#FCF1E0";
-    --light-color: "#FAFAFA";
+    --primary-color: #111111;
+    --secondary-color: #1E1823;
+    --accent-color: #FD9222;
+    --additional-color: #FCF1E0;
+    --light-color: #FAFAFA;
 }
 
 /* base reset */
