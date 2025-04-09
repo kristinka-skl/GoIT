@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SIMPLY CHOCOLATE</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/reset.css">
-  
-  <link rel="stylesheet" href="./styles/styles.css">
+  <!-- Normalize CSS (перед основними стилями) -->
 
+  <!-- Основні стилі -->
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
   <header class="header">
@@ -40,8 +41,8 @@
     </ul>
   </header>
   <main>
-    <!-- #region main banner -->
-    <section class="section main">
+    <!-- #region hero banner -->
+    <section class="section hero">
       <h1>
         Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
       </h1>
@@ -52,35 +53,32 @@
         <img src="./images/icons/arrow-down.svg" alt="scroll down">
       </a>
     </section>
-    <!-- #endregion main banner -->
+    <!-- #endregion hero banner -->
     
     <!-- #region benefits -->
     <section class="section benefits">
-      <h2 hidden>Benefits</h2>
-      <ul>
-        <li>
-          <img src="./images/icons/taste.svg" alt="Unsurpassed taste">
-          <h3>Unsurpassed taste</h3>
-          <p>
+      <h2 class="section-title" hidden>Benefits</h2>
+      <ul class="benefits-list">
+        <li class="benefits-list-item">
+          <img class="benefits-list-icon" src="./images/icons/taste.svg" alt="Unsurpassed taste">
+          <h3 class="benefits-list-subtitle">Unsurpassed taste</h3>
+          <p class="benefits-list-text">
             Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
           </p>
-
         </li>
-        <li>
-          <img src="./images/icons/price.svg" alt="Affordable price">
-          <h3>Affordable price</h3>
-          <p>
+        <li class="benefits-list-item">
+          <img class="benefits-list-icon" src="./images/icons/price.svg" alt="Affordable price">
+          <h3 class="benefits-list-subtitle">Affordable price</h3>
+          <p class="benefits-list-text">
             Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
           </p>
-
         </li>
-        <li>
-          <img src="./images/icons/production.svg" alt="Own production">
-          <h3>Own production</h3>
-          <p>
+        <li class="benefits-list-item">
+          <img class="benefits-list-icon" src="./images/icons/production.svg" alt="Own production">
+          <h3 class="benefits-list-subtitle">Own production</h3>
+          <p class="benefits-list-text">
             We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
           </p>
-
         </li>
       </ul>
     </section>
@@ -88,7 +86,7 @@
 
     <!-- #region sensation -->
     <section class="section sensation">
-      <h2>
+      <h2 class="section-title">
         It all adds up to one exceptional <span>taste</span> sensation
       </h2>
       <p>
@@ -125,7 +123,7 @@
 
     <!-- #region made -->
     <section id="made" class="section made">
-      <h2>
+      <h2 class="section-title">
         How it’s <span>made?</span> 
       </h2>
       <div>
@@ -152,14 +150,13 @@
             </li>
           </ul>          
         </div>
-      </div>
-      
+      </div>      
     </section>
     <!-- #endregion made -->
 
     <!-- #region is loved -->
     <section id="loved" class="section loved">
-      <h2>
+      <h2 class="section-title">
         <span>Chocolate</span> is loved
       </h2>
       <ul>
@@ -179,7 +176,7 @@
           <p> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
         </li>
       </ul>
-      <button type="button">Leave  a review</button>
+      <button type="button">Leave a review</button>
     </section>
     <!-- #endregion is loved -->
 

@@ -1,22 +1,55 @@
-/* base styles */
-
 :root {
-    
+    /* Fonts */
+    --primary-font: "Montserrat", sans-serif;
+
+    /* Colors */
+    --primary-color: "#111111";
+    --secondary-color: "#1E1823";
+    --accent-color: "#FD9222";
+    --additional-color: "#FCF1E0";
+    --light-color: "#FAFAFA";
 }
 
-.element:hover, .element:focus {}
+/* base reset */
 
 a {
     text-decoration: none;
 }
 
+button {
+
+}
+
+/* responsime images */
+
+/* base styles */
+
+
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--primary-font);    
 }
 
 .section {
     
 }
+
+.section-title {
+
+}
+
+/* .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} */
+
 
 /* main styles */
 
@@ -54,6 +87,26 @@ body {
 /* benefits */
 
 .benefits {
+
+}
+
+.benefits-list {
+
+}
+
+.benefits-list-item {
+
+}
+
+.benefits-list-icon {
+    
+}
+
+.benefits-list-subtitle {
+
+}
+
+.benefits-list-text {
 
 }
 
