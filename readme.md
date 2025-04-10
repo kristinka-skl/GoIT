@@ -13,24 +13,51 @@
 
 ---
 
-## 🔹 2. Box-model
+## 🔹 2. Flexbox
 
-### Основні компоненти блокової моделі:
+### Властивість display:
 
-- **content** — вміст елемента
-- **padding** — відступи всередині елемента
-- **border** — межа елемента
-- **margin** — відступи зовні елемента
+- **display:** — flex | inline-flex
 
-### Властивості для управління розмірами та відступами:
 
-- **top, right, bottom, left** — для позиціювання елемента
-- **width, height** — ширина та висота елемента (з максимальними та мінімальними значеннями)
-- **box-sizing: content-box | border-box | inherit** — управління розмірами елемента з урахуванням рамок і відступів
+### Властивості flex контейнера:
 
-### Стилізація рамок:
-- **border**: solid, dotted, dashed, double — типи рамок
-- **border-radius** - заокруглення кутів рамки
+- **gap:** — відступ між flex елементами
+- **flex-direction:** — row | row-reverse | column | column-reverse
+- **justify-content:** — flex-start | flex-end | center | space-between | space-around | space-evenly
+- **align-items:** — stretch | flex-start | flex-end | center | baseline
+- **flex-wrap:** — nowrap | wrap | wrap-reverse
+- **align-content:** — flex-start | flex-end | center | space-between | space-around | space-evenly | stretch
+
+- **CSS-функція calc():** — calc((100% - 20px) / 3);
+
+
+### Властивості flex елементів:
+- **flex-basis:** — auto | значення
+- **flex-grow:** — значення
+- **flex-shrink:** — значення 
+- **align-self:** — auto | flex-start | flex-end | center | baseline | stretch 
+- **order:** — позиція 
+
+
+## 🔹 3. Структурні псевдокласи
+**Стани елементів** (інтерактивні):
+
+- **:hover** — коли курсор на елементі
+- **:focus** — коли елемент у фокусі (наприклад, інпут)
+- **:active** — під час кліку
+- **:visited** — для відвіданих посилань
+
+**Положення в DOM**:
+- **:first-child** — перший елемент у батьківському
+- **:last-child** — останній
+- **:nth-child(n)** — n-ий за рахунком (number | odd | even)
+
+** Фільтрація**:
+- **:not(selector)** — все, крім вказаного
+- **:empty** — елемент без дітей
+- **:is()** — групування селекторів (новіший синтаксис)
+
 
 ### Оформлення переповнення:
 - **overflow**: visible | hidden | scroll | auto 
@@ -45,8 +72,6 @@
 ### Типи елементів:
 - **display**: block, inline, inline-block, none — управління відображенням елементів
 
-### Центрування елементів на сторінці:
-- **margin**: margin: 0 auto; || margin-right: auto; margin-left: auto;
 
 ### Налаштування "Гумові картинки":
 - display: block;
@@ -58,17 +83,3 @@
 - max-width: 100%;
 - height: 100%;
 - object-fit: cover;
-
-### Приховування заголовків (visually-hidden):
-- position: absolute;
-- white-space: nowrap;
-- width: 1px;
-- height: 1px;
-- overflow: hidden;
-- border: 0;
-- padding: 0;
-- clip: rect(0 0 0 0);
-- clip-path: inset(50%);
-- margin: -1px;
-
----
