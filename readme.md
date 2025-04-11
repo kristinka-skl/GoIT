@@ -29,7 +29,7 @@
 - **flex-wrap:** — nowrap | wrap | wrap-reverse
 - **align-content:** — flex-start | flex-end | center | space-between | space-around | space-evenly | stretch
 
-- **CSS-функція calc():** — calc((100% - 20px) / 3);
+- **CSS-функція calc():** — calc((100% - 20px * 2) / 3);
 
 
 ### Властивості flex елементів:
