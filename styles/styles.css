@@ -192,21 +192,24 @@ body {
 }
 
 .benefits-list {
-
+    display: flex;
+    justify-content: center;
+    gap: 88px;
 }
 
 .benefits-list-item {
-
+    width: 308px;
 }
 
 .benefits-list-icon {
-    
+    margin-bottom: 22px;
 }
 
 .benefits-list-subtitle {
     color: var(--light-color);
     font-weight: 600;
     font-size: 18px;
+    margin-bottom: 18px;
 }
 
 .benefits-list-text {
