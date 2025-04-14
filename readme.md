@@ -1,85 +1,116 @@
-# 📌 Модуль 3.1: Блокова модель
+# 📘 Модуль 3.1: Декоративні елементи
 
-## 🔹 1. План заняття
+## 🗂 План заняття
 
-- Блокова модель елемента
-- Властивості `width` та `height`
-- Модель візуального форматування: `box-sizing`
-- Геометрія елемента
-- Рамки та заокруглені рамки
-- "Схлопування" і випадіння вертикальних маржинів
-- Горизонтальне центрування блокових елементів
-- Типи боксів: блокові, рядкові та рядково-блокові елементи. Властивість `display`
+- 🖼 Контентні та декоративні зображення  
+- 🎨 Властивості: `background-color`, `background-image`, `background-repeat`, `background-position`, `background-size`  
+- 🧅 Багатошаровий фон  
+- 🌈 Градієнти: лінійний, радіальний  
+- 🕶 CSS-тіні та властивість `box-shadow`  
+- 📐 Векторна графіка (SVG)  
+- ✏️ Основи SVG-фігур  
+- 🧩 Способи використання SVG  
+- 🧰 Створення та робота з SVG-спрайтом  
+- 🧙‍♀️ Псевдоелементи `::before` та `::after`  
+
+> **TODO:**
+> - ✍🏻 Налаштувати `padding` для header links  
+> - 🎯 Стилізувати кнопки за допомогою класів
 
 ---
 
-## 🔹 2. Flexbox
+## 🖼 Властивість `background-image`
 
-### Властивість display:
+### 🔁 background-repeat
 
-- **display:** — flex | inline-flex
+- `repeat` — повторювати X і Y. Значення за замовчуванням.  
+- `repeat-x` — повторювати тільки X (горизонтально).  
+- `repeat-y` — повторювати тільки Y (вертикально).  
+- `no-repeat` — не повторювати.
 
+### 📍 background-position
 
-### Властивості flex контейнера:
+- `x y`  
+- `50% 50%`  
+- `100px 200px`  
+- `right bottom`  
+- `left top`
 
-- **gap:** — відступ між flex елементами
-- **flex-direction:** — row | row-reverse | column | column-reverse
-- **justify-content:** — flex-start | flex-end | center | space-between | space-around | space-evenly
-- **align-items:** — stretch | flex-start | flex-end | center | baseline
-- **flex-wrap:** — nowrap | wrap | wrap-reverse
-- **align-content:** — flex-start | flex-end | center | space-between | space-around | space-evenly | stretch
+### 📏 background-size
 
-- **CSS-функція calc():** — calc((100% - 20px * 2) / 3);
+- `auto auto`  
+- `200px`  
+- `200px 300px`  
+- `cover` — масштабувати, щоб покрити весь елемент  
+- `contain` — масштабувати, щоб вмістити зображення всередину елемента
 
+---
 
-### Властивості flex елементів:
-- **flex-basis:** — auto | значення
-- **flex-grow:** — значення
-- **flex-shrink:** — значення 
-- **align-self:** — auto | flex-start | flex-end | center | baseline | stretch 
-- **order:** — позиція 
+## 🧅 Багатошаровий фон
 
+Приклад:  
+`background-image: url(шлях до зображення 1), url(шлях до зображення 2);`
 
-## 🔹 3. Структурні псевдокласи
-**Стани елементів** (інтерактивні):
+---
 
-- **:hover** — коли курсор на елементі
-- **:focus** — коли елемент у фокусі (наприклад, інпут)
-- **:active** — під час кліку
-- **:visited** — для відвіданих посилань
+## 🌈 Градієнти
 
-**Положення в DOM**:
-- **:first-child** — перший елемент у батьківському
-- **:last-child** — останній
-- **:nth-child(n)** — n-ий за рахунком (number | odd | even)
+### 🔄 Лінійний градієнт
 
-** Фільтрація**:
-- **:not(selector)** — все, крім вказаного
-- **:empty** — елемент без дітей
-- **:is()** — групування селекторів (новіший синтаксис)
+Синтаксис:  
+`background-image: linear-gradient(<напрямок>, <колір-1>, <колір-2>, ...)`
 
+Приклад з фоном:  
+`background-image: linear-gradient(to top, rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url("path_to_image");`
 
-### Оформлення переповнення:
-- **overflow**: visible | hidden | scroll | auto 
+### 🎯 Радіальний градієнт
 
-| Значення  | Опис                                                                 |
-|-----------|----------------------------------------------------------------------|
-| `visible` | 🔹 **За замовчуванням.** Вміст виходить за межі контейнера і **видимий**. |
-| `hidden`  | 🔒 Вміст, що виходить за межі, **обрізається** і **не видно**.        |
-| `scroll`  | 📜 Завжди додає **прокрутку**, навіть якщо вона **не потрібна**.     |
-| `auto`    | ⚙️ Додає **прокрутку лише при потребі**, якщо вміст **не вміщується**. |
+Приклад:  
+`background-image: radial-gradient(rgba(17, 17, 17, 0.3), rgba(17, 17, 17, 1)), url("path_to_image");`
 
-### Типи елементів:
-- **display**: block, inline, inline-block, none — управління відображенням елементів
+---
 
+## 🧰 background (скорочена форма)
 
-### Налаштування "Гумові картинки":
-- display: block;
-- max-width: 100%;
-- height: auto;
+Приклад:  
+`background: url(шлях до зображення) repeat-x;`
 
-#### Альтернативний спосіб:
-- display: block;
-- max-width: 100%;
-- height: 100%;
-- object-fit: cover;
+---
+
+## 🕶 Властивість `box-shadow`
+
+Синтаксис:  
+`box-shadow: <x-offset> <y-offset> <blur> <spread> <color>;`
+
+Можна додати `inset` для внутрішньої тіні:  
+`box-shadow: inset <x-offset> <y-offset> <blur> <spread> <color>;`
+
+### 🔳 Багатошарова тінь
+
+Приклад:  
+`box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 6px 20px rgba(0, 0, 0, 0.1);`
+
+🔗 Приклади: [getcssscan.com/css-box-shadow-examples](https://getcssscan.com/css-box-shadow-examples)
+
+---
+
+## 📐 Векторна графіка
+
+- Вбудований SVG (`inline`)
+- Властивість `fill` — визначає колір заливки
+
+---
+
+## 🧰 SVG-спрайт
+
+- Генерація через: [icomoon.io/app](https://icomoon.io/app/)
+
+---
+
+## 🧙‍♀️ Псевдоелементи
+
+Використання:  
+`.box::before`, `.box::after`, `.box:hover::before`
+
+---
+

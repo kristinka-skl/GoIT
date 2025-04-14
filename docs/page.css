@@ -1,0 +1,10 @@
+h1 {
+    color: blue;
+}
+
+.wrapper-image {
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+
+}
