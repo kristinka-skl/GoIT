@@ -105,6 +105,7 @@
 ## 🧰 SVG-спрайт
 
 - Генерація через: [icomoon.io/app](https://icomoon.io/app/)
+- Оптимізація SVG: [svgomg.net](https://svgomg.net/)
 
 ---
 
