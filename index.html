@@ -18,29 +18,35 @@
     <div class="container header-container">
       <a class="header-logo" href="./index.html">
         <span class="header-logo-accent">SIMPLY</span> CHOCOLATE 
-        <img src="./images/icons/chocolate-icon.svg" alt="logo">
+        <svg class="header-logo-item" width="24" height="24">
+          <use href="./sprite.svg#icon-chocolate-icon"></use>
+        </svg>
       </a>
       <ul class="header-list-nav">
         <li class="header-nav-item">
-          <a href="./index.html">Home</a>
+          <a class="header-nav-link" href="./index.html">Home</a>
         </li>
         <li class="header-nav-item">
-          <a href="#made">How it’s made?</a>
+          <a class="header-nav-link" href="#made">How it’s made?</a>
         </li>
         <li class="header-nav-item">
-          <a href="#loved">Chocolate is loved</a>
+          <a class="header-nav-link" href="#loved">Chocolate is loved</a>
         </li>
       </ul>
       <ul class="header-list-socials">
         <li class="header-socials-item">
           <a href="https://www.instagram.com/" target="_blank">
-            <img src="./images/icons/instagram.svg" alt="instagram icon">
-          </a>
+            <svg class="header-social-item" width="24" height="24">
+              <use href="./sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>          
         </li>
         <li class="header-socials-item">
-          <a href="https://twitter.com/" target="_blank">
-            <img src="./images/icons/twitter.svg" alt="twitter icon">
-          </a>
+          <a href="https://www.twitter.com/" target="_blank">
+            <svg class="header-social-item" width="24" height="24">
+              <use href="./sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>    
         </li>
       </ul>
     </div>
@@ -51,15 +57,17 @@
       <div class="container hero-section">
         <div class="hero-banner">
           <h1 class="hero-main-title">
-            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
+            Treat yourself or a loved one to <br> our finest ingredients for a moment of pure delight!
           </h1>
           <div class="hero-buttons-wrapper">
             <ul class="hero-btns-list">
               <li class="hero-btns-item">
-                <button type="button">Buy now</button>
+                <button type="button" class="button button-primary">Buy now</button>
               </li>
               <li class="hero-btns-item">
-                <a href="#">How it’s made</a>
+                <button type="button" class="button button-tertiary">
+                  How it’s made
+                </button>
               </li>
             </ul>
             <a href="#footer">
@@ -238,7 +246,7 @@
           </ul>
           <form>
             <input type="email">
-            <button type="submit">Subscribe</button>
+            <button type="submit" class="button">Subscribe</button>
           </form>
         </div>
       </div>

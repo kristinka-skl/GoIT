@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-chocolate-icon" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fd9222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="M22 24 8 15m4-6 14 8m-15 9L23 7m5 8c-3-2-4-4-2-7L16 2 4 21l14 9 10-15z" style="stroke:var(--color1, #fd9222)"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="M23 3H9C6 3 3 6 3 9v14c0 3 3 6 6 6h14c3 0 6-3 6-6V9c0-3-3-6-6-6z"/>
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="M21 15a5 5 0 1 1-10 2 5 5 0 0 1 10-2zm2-6"/>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 32 32">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="m31 4-5 2a6 6 0 0 0-10 4v1l-7-1-6-6s-4 13 8 19c-3 2-6 2-10 2 12 7 27 0 27-15V9l3-5z"/>
+    </symbol>
+    <symbol id="icon-arrow-down" viewBox="0 0 32 32">
+      <path fill="#fd9222" d="M17 19a2 2 0 0 1-2 0L5 9a2 2 0 0 0-2 0 2 2 0 0 0-2 2l1 1 10 10a6 6 0 0 0 8 0l10-10a2 2 0 0 0-3-3L17 19z" style="fill:var(--color1, #fd9222)"/>
+    </symbol>
+    <symbol id="icon-production" viewBox="0 0 32 32">
+      <path fill="#fd9222" d="m15 14-1-3c0-4 5-9 11-9 2 0 5 3 5 5 0 6-5 11-9 11l-3-1L5 29a2 2 0 0 1-2-2l12-13z" style="fill:var(--color1, #fd9222)"/>
+    </symbol>
+    <symbol id="icon-price" viewBox="0 0 32 32">
+      <path fill="#fd9222" d="M16 1C8 1 1 8 1 16s7 15 15 15 15-7 15-15S24 1 16 1zm0 27C9 28 4 23 4 16S9 4 16 4s12 5 12 12-5 12-12 12z" style="fill:var(--color1, #fd9222)"/>
+      <path fill="#fd9222" d="M18 14h-4l-1-1 1-1h6l1-2-1-1h-2V7l-2-1-2 1v2a4 4 0 0 0 0 9h4l1 1-1 1h-6l-1 2 1 1h2v2l2 1 2-1v-2a4 4 0 0 0 0-9z" style="fill:var(--color1, #fd9222)"/>
+    </symbol>
+    <symbol id="icon-taste" viewBox="0 0 32 32">
+      <path d="m14 0 8 9a1 1 0 0 1 2 0l1 1v1h-1l8 7v3L21 32h-3l-5-6a1 1 0 0 1 0 1 1 1 0 0 1-1 0l-3-3a1 1 0 0 1 0-2l-9-8v-3L11 0h3zm7 10-2-2a1 1 0 0 0-1 0l-4 4a1 1 0 0 0 0 1l2 2h1l-2-2 4-4 1 2 1-1zm-6 6-2-2a1 1 0 0 0-1 0l-4 4v1l2 2 1-1-2-1 4-4 2 2v-1zM8 7l4 4h1l4-4V6l-4-4a1 1 0 0 0-1 0L8 6v1zm-6 6 4 4h1l4-4a1 1 0 0 0 0-1L7 8a1 1 0 0 0-1 0l-4 4v1zm8 10 3 3 11-15-1-1-13 13z" style="fill:var(--color2, #000)"/>
+      <path fill="#fd9222" d="m14 0 8 9a1 1 0 0 1 2 0l1 1v1h-1l8 7v3L21 32h-3l-5-6a1 1 0 0 1 0 1 1 1 0 0 1-1 0l-3-3a1 1 0 0 1 0-2l-9-8v-3L11 0h3zm7 10-2-2a1 1 0 0 0-1 0l-4 4a1 1 0 0 0 0 1l2 2h1l-2-2 4-4 1 2 1-1zm-6 6-2-2a1 1 0 0 0-1 0l-4 4v1l2 2 1-1-2-1 4-4 2 2v-1zM8 7l4 4h1l4-4V6l-4-4a1 1 0 0 0-1 0L8 6v1zm-6 6 4 4h1l4-4a1 1 0 0 0 0-1L7 8a1 1 0 0 0-1 0l-4 4v1zm8 10 3 3 11-15-1-1-13 13z" style="fill:var(--color1, #fd9222)"/>
+    </symbol>
+  </defs>
+</svg>

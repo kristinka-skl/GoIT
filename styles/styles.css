@@ -8,6 +8,7 @@
     --accent-color: #FD9222;
     --additional-color: #FCF1E0;
     --light-color: #FAFAFA;
+    --white-color: #ffffff;
 }
 
 /* base reset */
@@ -49,6 +50,7 @@ button {
     min-width: 144px;
     min-height: 45px;
     font-size: 14px;
+    transition: .3s;
 }
 
 .button-primary {
@@ -93,6 +95,10 @@ img {
     height: auto;
 }
 /* base styles */
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: var(--primary-font);  
@@ -176,12 +182,16 @@ body {
     padding-right: 90px;
 }
 
-.header-nav-item {
-    padding: 31px 0;
+.header-nav-item {    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: -0.02em;
+}
+
+.header-nav-link {
+    display: inline-block;
+    padding: 31px 0;
 }
 
 .header-list-socials {
@@ -192,6 +202,16 @@ body {
 
 .header-socials-item {
 
+}
+
+.header-social-item {
+    fill: var(--white-color);
+    stroke: var(--primary-color);
+    transition: 0.3s;
+}
+
+.header-social-item:hover {
+    stroke: var(--accent-color);
 }
 
 /* hero */
@@ -207,6 +227,10 @@ body {
     background-color: bisque;
     padding: 381px 40px 40px 40px;
     border-radius: 30px;
+    background-image: url("../images/chocolate-banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-main-title {
@@ -216,6 +240,7 @@ body {
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    color: var(--white-color);
 }
 
 .hero-buttons-wrapper {
@@ -227,6 +252,7 @@ body {
 .hero-btns-list {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 
