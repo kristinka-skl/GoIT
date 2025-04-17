@@ -1,17 +1,9 @@
 h1 {
     color: blue;
-    font-size: 48px;
 }
 
-.wrapper-image {
-    max-width: 200px;
-    height: 200px;
-    border: solid 5px red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(17, 17, 17, 1) 0%, rgba(17, 17, 17, 0.1) 100%), url(../images/chocolate-banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.wrapper {
+    
 }
+
+
