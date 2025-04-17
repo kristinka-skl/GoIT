@@ -192,7 +192,7 @@ body {
 .header-nav-link {
     display: inline-block;
     padding: 31px 0;
-}
+}z
 
 .header-list-socials {
     display: flex;
@@ -345,6 +345,26 @@ body {
 
 .loved {
     padding: 50px 0 100px;
+}
+
+.loved-list {
+    
+}
+
+.loved-list-item {
+    
+}
+
+.loved-list-image {
+
+}
+
+.loved-list-subtitle {
+
+}
+
+.loved-list-description {
+
 }
 
 /* footer */
