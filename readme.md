@@ -94,6 +94,7 @@
 
 - Вбудований SVG (`inline`)
 - Властивість `fill` — визначає колір заливки
+- Властивість `stroke` — визначає колір рамок
 
 ---
 
@@ -101,6 +102,10 @@
 
 - Генерація через: [icomoon.io/app](https://icomoon.io/app/)
 - Оптимізація SVG: [svgomg.net](https://svgomg.net/)
+
+-   `<svg class="class-name" width="24" height="24">`
+        `<use href="./sprite.svg#icon-instagram"></use>`
+    `</svg>`
 
 ---
 
