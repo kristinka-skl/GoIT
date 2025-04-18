@@ -101,12 +101,12 @@ html {
 
 body {
     font-family: var(--primary-font);  
-    background-color: #FAFAFA;
-    color: #111111; 
+    background-color: var(--light-color);
+    color: var(--primary-color); 
 }
 
 .container {
-    max-width: 1166px;
+    width: 1166px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -121,7 +121,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: var(--primary-color);
-    max-width: 411px;
+    width: 411px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
@@ -232,7 +232,7 @@ body {
 }
 
 .hero-main-title {
-    max-width: 484px;
+    width: 484px;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 28px;
@@ -290,7 +290,7 @@ body {
 }
 
 .benefits-list-item {
-    max-width: 308px;
+    width: 308px;
 }
 
 .benefits-list-icon {
@@ -348,7 +348,7 @@ body {
     height: 270px;
     border: solid 1px var(--accent-color);
     border-radius: 15px;
-    max-width: 270px;
+    width: 270px;
     padding: 28px 36px 26px 28px;
     font-size: 20px;
     display: flex;
@@ -432,7 +432,7 @@ body {
     border: 1px solid rgba(17, 17, 17, 0.1);
     box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
     border-radius: 15px;
-    max-width: 360px;
+    width: 360px;
     text-align: center;
     margin-bottom: 49px;
     padding: 66px 24px 24px 24px;
