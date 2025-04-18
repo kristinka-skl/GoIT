@@ -255,6 +255,7 @@ body {
 
 .hero-scroll-btn {    
     display: inline-flex;
+    align-items: center;
     gap: 14px;
     font-weight: 500;
     font-size: 14px;
@@ -266,6 +267,20 @@ body {
 .hero-scroll-btn:hover,
 .hero-scroll-btn:focus {
     color: var(--accent-color);
+}
+
+.hero-scroll-icon-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
+
+.hero-scroll-btn:hover .hero-scroll-icon-wrapper {
+    background-color: var(--accent-color);
 }
 
 .hero-scroll-icon {
@@ -482,6 +497,7 @@ body {
 
 .footer-bottom-list {
     display: flex;
+    align-items: center;
     gap: 24px;
 }
 
