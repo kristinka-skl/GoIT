@@ -468,9 +468,26 @@ body {
 .footer {
     background-color: var(--secondary-color);
     color: var(--light-color);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
+.footer-top-section,
+.footer-bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer-top-section {
+    padding-bottom: 50px;
+    margin-bottom: 24px;
+}
 
+.footer-bottom-list {
+    display: flex;
+    gap: 24px;
+}
 
-
+.footer-bottom-list-item:hover {
+    color: var(--accent-color);
+}
