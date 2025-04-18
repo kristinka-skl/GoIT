@@ -212,8 +212,7 @@ body {
     stroke: var(--primary-color);
 }
 
-.header-social-item:hover,
-.header-social-item:focus {
+.header-social-item:hover {
     stroke: var(--accent-color);
 }
 
