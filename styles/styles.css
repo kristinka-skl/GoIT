@@ -12,7 +12,6 @@
 }
 
 /* base reset */
-
 h1,
 h2,
 h3,
@@ -90,14 +89,13 @@ button {
 }
 
 /* responsime images */
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-/* base styles */
 
+/* base styles */
 html {
     scroll-behavior: smooth;
 }
@@ -148,7 +146,6 @@ body {
 }
 
 /* main styles */
-
 .header {
 
 }
@@ -217,7 +214,6 @@ body {
 }
 
 /* hero */
-
 .hero {
     
 }
@@ -226,7 +222,7 @@ body {
     margin-bottom: 85px;
 }
 .hero-banner {
-    background-color: bisque;
+    background-color: var(--secondary-color);
     padding: 381px 40px 40px 40px;
     border-radius: 30px;
     background-image: url("../images/chocolate-banner.jpg");
@@ -283,7 +279,6 @@ body {
 
 
 /* benefits */
-
 .benefits {
     background-color: var(--secondary-color);
     padding: 50px 0;
@@ -325,7 +320,6 @@ body {
 }
 
 /* sensation */
-
 .sensation {
     padding: 77px 0 50px;
 }
@@ -384,7 +378,6 @@ body {
 }
 
 /* made */
-
 .made {
     padding: 50px 0;
 }
@@ -418,7 +411,6 @@ body {
 }
 
 /* loved */
-
 .loved {
     padding: 50px 0 100px;
 }
@@ -470,7 +462,6 @@ body {
 }
 
 /* footer */
-
 .footer {
     background-color: var(--secondary-color);
     color: var(--light-color);
