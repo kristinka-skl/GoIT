@@ -70,9 +70,11 @@
                 </button>
               </li>
             </ul>
-            <a href="#footer">
+            <a href="#footer" class="hero-scroll-btn">
               scroll down
-              <img src="./images/icons/arrow-down.svg" alt="scroll down">
+              <svg class="hero-scroll-icon" width="22" height="22">
+                <use href="./sprite.svg#icon-arrow-down"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -86,21 +88,33 @@
         <h2 class="section-title visually-hidden">Benefits</h2>
         <ul class="benefits-list">
           <li class="benefits-list-item">
-            <img class="benefits-list-icon" src="./images/icons/taste.svg" alt="Unsurpassed taste">
+              <div class="benefits-list-icon">
+                <svg class="" width="32" height="32">
+                  <use href="./sprite.svg#icon-production"></use>
+                </svg>
+              </div>
             <h3 class="benefits-list-subtitle">Unsurpassed taste</h3>
             <p class="benefits-list-text">
               Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched. Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
             </p>
           </li>
           <li class="benefits-list-item">
-            <img class="benefits-list-icon" src="./images/icons/price.svg" alt="Affordable price">
+              <div class="benefits-list-icon">
+                <svg class="" width="32" height="32">
+                  <use href="./sprite.svg#icon-price"></use>
+                </svg>
+              </div>
             <h3 class="benefits-list-subtitle">Affordable price</h3>
             <p class="benefits-list-text">
               Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
             </p>
           </li>
           <li class="benefits-list-item">
-            <img class="benefits-list-icon" src="./images/icons/production.svg" alt="Own production">
+              <div class="benefits-list-icon">
+                <svg class="" width="32" height="32">
+                  <use href="./sprite.svg#icon-taste"></use>
+                </svg>
+              </div>
             <h3 class="benefits-list-subtitle">Own production</h3>
             <p class="benefits-list-text">
               We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
@@ -156,26 +170,26 @@
         <h2 class="section-title">
           How it’s <span class="accent">made?</span>
         </h2>
-        <div>
-          <img src="./images/how-its-made.jpg" alt="How it’s made?">
-          <div>
-            <h3>
-              Try  our chocolates today and discover the perfect balance of flavor
+        <div class="made-content-wrapper">
+          <img class="made-content-image" src="./images/how-its-made.jpg" alt="How it’s made?">
+          <div class="made-content-right">
+            <h3 class="made-content-subtitle">
+              <p>Try  our chocolates today and <br> discover the perfect balance of flavor</p>
             </h3>
-            <ul>
-              <li>
+            <ul class="made-content-list">
+              <li class="made-list-item">
                 Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
               </li>
-              <li>
+              <li class="made-list-item">
                 At the same time, prepare a water bath. Melt the butter on it.
               </li>
-              <li>
+              <li class="made-list-item">
                 "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
               </li>
-              <li>
+              <li class="made-list-item">
                 Heat the mixture over low heat, letting it barely boil.
               </li>
-              <li>
+              <li class="made-list-item">
                 Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
               </li>
             </ul>
@@ -188,7 +202,7 @@
     <!-- #region is loved -->
     <section id="loved" class="section loved">
       <div class="container">
-        <h2 class="section-title">
+        <h2 class="section-title loved-title">
           <span class="accent">Chocolate</span> is loved
         </h2>
         <ul class="loved-list">
@@ -208,7 +222,7 @@
             <p class="loved-list-description"> Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The wafer is soft but crunchy.</p>
           </li>
         </ul>
-        <button type="button" class="button">Leave a review</button>
+        <button type="button" class="button loved-button button-secondary">Leave a review</button>
       </div>
     </section>
     <!-- #endregion is loved -->
@@ -246,7 +260,7 @@
           </ul>
           <form>
             <input type="email">
-            <button type="submit" class="button">Subscribe</button>
+            <button type="submit" class="button button-primary">Subscribe</button>
           </form>
         </div>
       </div>

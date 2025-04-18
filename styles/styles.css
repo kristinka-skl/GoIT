@@ -50,7 +50,6 @@ button {
     min-width: 144px;
     min-height: 45px;
     font-size: 14px;
-    transition: .3s;
 }
 
 .button-primary {
@@ -107,15 +106,11 @@ body {
 }
 
 .container {
-    width: 1166px;
+    max-width: 1166px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-}
-
-.section {    
-    border: solid 1px red;    
 }
 
 .section-title {
@@ -126,7 +121,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: var(--primary-color);
-    width: 411px;
+    max-width: 411px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
@@ -194,6 +189,10 @@ body {
     padding: 31px 0;
 }
 
+.header-nav-link:hover {
+    color: var(--accent-color);
+}
+
 .header-list-socials {
     display: flex;
     align-items: center;
@@ -207,7 +206,6 @@ body {
 .header-social-item {
     fill: var(--white-color);
     stroke: var(--primary-color);
-    transition: 0.3s;
 }
 
 .header-social-item:hover {
@@ -234,7 +232,7 @@ body {
 }
 
 .hero-main-title {
-    width: 484px;
+    max-width: 484px;
     margin-bottom: 32px;
     font-weight: 500;
     font-size: 28px;
@@ -255,6 +253,28 @@ body {
     gap: 20px;
 }
 
+.hero-scroll-btn {    
+    display: inline-flex;
+    gap: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.03em;
+    color: var(--light-color);
+}
+
+.hero-scroll-btn:hover {
+    color: var(--accent-color);
+}
+
+.hero-scroll-icon {
+    fill: var(--accent-color);
+}
+
+.hero-scroll-btn:hover .hero-scroll-icon {
+    fill: var(--light-color);
+}
+
 
 /* benefits */
 
@@ -270,11 +290,18 @@ body {
 }
 
 .benefits-list-item {
-    width: 308px;
+    max-width: 308px;
 }
 
 .benefits-list-icon {
     margin-bottom: 22px;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
 }
 
 .benefits-list-subtitle {
@@ -317,12 +344,11 @@ body {
 }
 
 .sensation-list-item {
-    flex-basis: calc((100% - 18px * 3) / 4);
+    /* flex-basis: calc((100% - 18px * 3) / 4); */
     height: 270px;
     border: solid 1px var(--accent-color);
     border-radius: 15px;
-    width: 270px;
-    height: 270px;
+    max-width: 270px;
     padding: 28px 36px 26px 28px;
     font-size: 20px;
     display: flex;
@@ -330,8 +356,25 @@ body {
     justify-content: space-between;
 }
 
+.sensation-list-item:first-child {
+    background-color: var(--accent-color);
+}
+
+.sensation-list-item:nth-child(3) {
+    background-color: var(--secondary-color);
+    border: transparent;
+}
+
+.sensation-list-item:nth-child(odd) {
+    color: var(--light-color);    
+}
+
 .sensation-list-subtitle {
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -341,34 +384,94 @@ body {
     padding: 50px 0;
 }
 
+.made-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.made-content-right {
+    padding: 32px;
+}
+
+.made-content-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 28px;
+}
+
+.made-content-list {
+
+}
+
+.made-list-item {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+}
+
 /* loved */
 
 .loved {
     padding: 50px 0 100px;
 }
 
+.loved-title {
+    margin-bottom: 90px;
+}
+
 .loved-list {
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 .loved-list-item {
-    
+    position: relative;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+    border-radius: 15px;
+    max-width: 360px;
+    text-align: center;
+    margin-bottom: 49px;
+    padding: 66px 24px 24px 24px;
 }
 
 .loved-list-image {
-
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .loved-list-subtitle {
-
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.33;
+    margin-bottom: 24px;
 }
 
 .loved-list-description {
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
 
+.loved-button {
+    display: block;
+    margin: 0 auto;
 }
 
 /* footer */
 
 .footer {
-
+    background-color: var(--secondary-color);
+    color: var(--light-color);
 }
+
+
+
+
+

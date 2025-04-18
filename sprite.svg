@@ -11,7 +11,7 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.7" d="m31 4-5 2a6 6 0 0 0-10 4v1l-7-1-6-6s-4 13 8 19c-3 2-6 2-10 2 12 7 27 0 27-15V9l3-5z"/>
     </symbol>
     <symbol id="icon-arrow-down" viewBox="0 0 32 32">
-      <path fill="#fd9222" d="M17 19a2 2 0 0 1-2 0L5 9a2 2 0 0 0-2 0 2 2 0 0 0-2 2l1 1 10 10a6 6 0 0 0 8 0l10-10a2 2 0 0 0-3-3L17 19z" style="fill:var(--color1, #fd9222)"/>
+      <path d="M17 19a2 2 0 0 1-2 0L5 9a2 2 0 0 0-2 0 2 2 0 0 0-2 2l1 1 10 10a6 6 0 0 0 8 0l10-10a2 2 0 0 0-3-3L17 19z"/>
     </symbol>
     <symbol id="icon-production" viewBox="0 0 32 32">
       <path fill="#fd9222" d="m15 14-1-3c0-4 5-9 11-9 2 0 5 3 5 5 0 6-5 11-9 11l-3-1L5 29a2 2 0 0 1-2-2l12-13z" style="fill:var(--color1, #fd9222)"/>
