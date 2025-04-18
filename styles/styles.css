@@ -344,11 +344,10 @@ body {
 }
 
 .sensation-list-item {
-    /* flex-basis: calc((100% - 18px * 3) / 4); */
+    flex-basis: calc((100% - 18px * 3) / 4);
     height: 270px;
     border: solid 1px var(--accent-color);
     border-radius: 15px;
-    width: 270px;
     padding: 28px 36px 26px 28px;
     font-size: 20px;
     display: flex;
