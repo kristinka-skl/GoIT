@@ -208,6 +208,8 @@ body {
 .header-social-item {
     fill: var(--white-color);
     stroke: var(--primary-color);
+    transition-property: fill, stroke;
+    transition-duration: .3s;
 }
 
 .header-social-item:hover {
