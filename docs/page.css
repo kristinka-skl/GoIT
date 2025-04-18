@@ -4,6 +4,7 @@
 
 body {
     padding: 5px 20px;
+    height: 4000px;
 }
 
 h1 {
@@ -23,6 +24,8 @@ h1 {
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    position: absolute;
 }
 
 .box {
@@ -35,6 +38,7 @@ h1 {
     align-items: center;
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
 }
 
 .box-1 {

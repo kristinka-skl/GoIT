@@ -49,6 +49,7 @@ button {
     min-width: 144px;
     min-height: 45px;
     font-size: 14px;
+    transition: background-color 250ms linear,  color 250ms ease-in-out, border 250ms ease-in;
 }
 
 .button-primary {
@@ -368,7 +369,46 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
 }
+
+.ovrlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);   
+    transition: transform 500ms linear;
+}
+
+.sensation-list-item:hover .ovrlay {
+    transform: translateY(0);    
+}
+
+.ovrlay-text {
+    color: white;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sensation-list-item:hover .ovrlay-text {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
 
 .sensation-list-item:first-child {
     background-color: var(--accent-color);
@@ -423,6 +463,20 @@ body {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;    
+}
+
+.made-list-item::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #4c4c4c;
+    border: solid 1px #eceded;
+    border-radius: 100%;
+    flex-shrink: 0;
 }
 
 /* loved */
