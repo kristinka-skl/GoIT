@@ -411,14 +411,6 @@ body {
     opacity: 1;
 }
 
-
-
-
-
-
-
-
-
 .sensation-list-item:first-child {
     background-color: var(--accent-color);
 }
