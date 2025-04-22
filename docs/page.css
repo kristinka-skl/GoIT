@@ -12,20 +12,8 @@ h1 {
     margin-bottom: 40px;
 }
 
-input:hover::placeholder, 
-input:focus::placeholder {
-  color:orange;
-}
 
-input[type="checkbox"]:checked {
-	background: orangered;
-}
 
-button:disabled {
-    background-color: rgb(132, 24, 24);
-    cursor: not-allowed;
-    color: #f2eaea;
-  }
 
 
 

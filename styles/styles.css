@@ -40,6 +40,7 @@ button {
     border: none;
     font-weight: 600;
     font-size: 14px;
+    outline: transparent;
 }
 
 /* Buttons */
@@ -286,7 +287,8 @@ body {
     transition-duration: .3s;
 }
 
-.hero-scroll-btn:hover .hero-scroll-icon-wrapper {
+.hero-scroll-btn:hover .hero-scroll-icon-wrapper,
+.hero-scroll-btn:focus .hero-scroll-icon-wrapper {
     background-color: var(--accent-color);
     
 }
@@ -301,7 +303,6 @@ body {
 .hero-scroll-btn:focus .hero-scroll-icon {
     fill: var(--light-color);
 }
-
 
 /* benefits */
 .benefits {
@@ -554,6 +555,10 @@ body {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.footer-bottom-list-item {
+    transition: color 250ms ease;
 }
 
 .footer-bottom-list-item:hover,

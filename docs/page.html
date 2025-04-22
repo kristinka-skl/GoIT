@@ -10,20 +10,59 @@
     <h1>
         Lesson 5.1
     </h1>
-    <form>
-        <fieldset>
-          <legend>Заголовок групи</legend>
-          <!-- Група інтерактивних елементів -->
-        </fieldset>
-      
-        <fieldset>
-          <legend>Заголовок групи</legend>
-          !-- Група інтерактивних елементів -->
-        </fieldset>
-      
-        <button type="submit">Submit</button>
-      </form>
-      
+    
+    <form class="user-form" action="" autocomplete="on">
+
+        <div>
+            
+            <form>
+                <fieldset>
+                  <legend>Прозвище Дракса из «Стражей Галактики»?</legend>
+                  <label>
+                    <input type="radio" name="answer" value="Exterminator">
+                    Уничтожитель
+                  </label>
+                  <label>
+                    <input type="radio" name="answer" value="Destroyer">
+                    Разрушитель
+                  </label>
+                  <label>
+                    <input type="radio" name="answer" value="Accuser">
+                    Обвинитель
+                  </label>
+                  <label>
+                    <input type="radio" name="answer" value="Sweet-tooth">
+                    Сладкоежка
+                  </label>
+                </fieldset>
+              </form>
+              
+
+        </div>
+        
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+
+
+    <!-- <script>
+        const userForm = document.querySelector('.user-form');
+
+        userForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const { user_name, email_field, user_password } = event.currentTarget;
+
+            console.log(user_name.value);
+            console.log(email_field.value);
+            console.log(user_password.value);
+
+            event.currentTarget.reset();
+        })
+
+    </script> -->
+    
       
 </body>
 </html>
