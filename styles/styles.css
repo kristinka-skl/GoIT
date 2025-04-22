@@ -206,14 +206,15 @@ body {
 
 }
 
-.header-social-item {
+.header-social-icon {
     fill: var(--white-color);
     stroke: var(--primary-color);
     transition-property: fill, stroke;
     transition-duration: .3s;
 }
 
-.header-social-item:hover {
+.header-socials-item a:hover .header-social-icon,
+.header-socials-item a:focus .header-social-icon {
     stroke: var(--accent-color);
 }
 
