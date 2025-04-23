@@ -403,7 +403,7 @@ body {
 }
 
 .ovrlay-text {
-    color: white;
+    color: var(--white-color);
     font-size: 14px;
     padding: 20px;
     text-align: center;
@@ -565,4 +565,58 @@ body {
 .footer-bottom-list-item:hover,
 .footer-bottom-list-item:focus {
     color: var(--accent-color);
+}
+
+.footer-form-input-email {
+    border: 1.50px solid rgba(255, 255, 255, 0.15);
+    border-radius: 30px;
+    padding: 13px 24px;
+    width: 313px;
+    height: 52px;
+    background-color: transparent;
+    outline: none;
+    margin-right: 8px;
+    color: var(--light-color);
+}
+
+.footer-form-input-email:hover,
+.footer-form-input-email:focus {
+    border-color: var(--accent-color);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    background-color: var(--light-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 794px;
+    width: 517px;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.popup-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    height: 28px;
+    width: 28px;
+    outline: none;
+    background-color: #FD9222;
 }

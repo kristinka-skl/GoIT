@@ -273,13 +273,86 @@
               <a href="#loved" class="footer-bottom-list-item">Chocolate is loved</a>
             </li>
           </ul>
-          <form name="subscribe_form">
-            <input>
-            <button type="submit" class="button button-primary">Subscribe</button>
+          <form 
+            name="subscribe_form"
+          >
+            <input
+              class="footer-form-input-email"
+              placeholder="Enter your email"
+              type="email"
+              name="subscribe_email"
+            >
+            
+
+            <button 
+              type="submit" 
+              class="button button-primary"
+            >
+              Subscribe
+            </button>
+
           </form>
         </div>
       </div>
   </footer>
+
+  <div class="backdrop">
+    <div class="modal">
+      <button class="popup-close">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 7L7 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <h3>Leave a review about <span class="accent">our chocolate</span></h3>
+      <form>
+        <label for="form-username">Name</label>
+        <div>
+          <input 
+            type="text" 
+            name="form_username" 
+            id="form-username"
+          >
+        </div>
+        <label for="form-useremail">Email</label>
+        <div>
+          <input 
+            type="email" 
+            name="form_user" 
+            id="form-useremail"
+          >
+        </div>
+        <label for="form-userphone">Phone number</label>
+        <div>
+          <input 
+            type="tel" 
+            name="form_user" 
+            id="form-userphone"
+          >
+        </div>
+        <label for="form-usercomment">Comment</label>
+        <div>
+          <textarea 
+            name="form_user" 
+            id="form-usercomment" 
+          ></textarea>
+        </div>
+        
+        <div>
+          <input 
+            type="checkbox" 
+            name="form_privacy" 
+            id="form-usercomment"
+          >
+          <label for="form-usercomment">I accept the terms and conditions of the <a href="#" class="accent">Privacy Policy</a></label>
+        </div>
+
+        <button type="submit" class="button button-primary">Send</button>
+        
+      </form>
+
+    </div>
+  </div>
 
   
 </body>

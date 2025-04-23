@@ -65,3 +65,8 @@
 <input type="datetime-local">
 <input type="tel">
 <input type="password" minLength="6" maxLength="20">
+
+## 🔹 Додаткові ресурси 📚
+- 🖼 [dashly-theme](https://dashly-theme.com/account.html) – приклад використання форм  
+- 🖼 [ant.design](https://ant.design/components/overview/) – одна з популярних js бібліотек з різними компонентами  
+

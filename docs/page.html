@@ -3,66 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 5.1</title>
+    <title>Forms</title>
     <link rel="stylesheet" href="./page.css">
 </head>
 <body>
     <h1>
-        Lesson 5.1
+        Forms
     </h1>
-    
-    <form class="user-form" action="" autocomplete="on">
+    <div class="wrapper">
+        <form name="user_form">
+            <label for="form-username">Username</label>
+            <div>
+                <input 
+                    type="text" 
+                    id="form-username" 
+                    name="user_name"
+                    placeholder="Username"
+                >
+            </div>
+            <label for="form-useremail">useremail</label>
+            <div>
+                <input 
+                    type="email" 
+                    id="form-useremail"
+                    name="user_email"
+                    placeholder="Useremail"
+                    required
+                    minlength="5"
+                    maxlength="40"
+                    
+                >
+            </div>
 
-        <div>
-            
-            <form>
-                <fieldset>
-                  <legend>Прозвище Дракса из «Стражей Галактики»?</legend>
-                  <label>
-                    <input type="radio" name="answer" value="Exterminator">
-                    Уничтожитель
-                  </label>
-                  <label>
-                    <input type="radio" name="answer" value="Destroyer">
-                    Разрушитель
-                  </label>
-                  <label>
-                    <input type="radio" name="answer" value="Accuser">
-                    Обвинитель
-                  </label>
-                  <label>
-                    <input type="radio" name="answer" value="Sweet-tooth">
-                    Сладкоежка
-                  </label>
-                </fieldset>
-              </form>
-              
-
-        </div>
-        
-        <div>
-            <button type="submit">Submit</button>
-        </div>
-    </form>
+            <button type="submit" disabled>Submit</button>
+        </form>
+    </div>
 
 
-
-    <!-- <script>
-        const userForm = document.querySelector('.user-form');
-
-        userForm.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const { user_name, email_field, user_password } = event.currentTarget;
-
-            console.log(user_name.value);
-            console.log(email_field.value);
-            console.log(user_password.value);
-
-            event.currentTarget.reset();
-        })
-
-    </script> -->
-    
-      
 </body>
 </html>
