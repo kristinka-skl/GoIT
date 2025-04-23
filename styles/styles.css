@@ -620,3 +620,8 @@ body {
     outline: none;
     background-color: #FD9222;
 }
+
+input,
+textarea {
+    margin-bottom: 18px;
+}
