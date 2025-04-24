@@ -584,6 +584,8 @@ body {
     border-color: var(--accent-color);
 }
 
+/* review popup */
+
 .backdrop {
     position: fixed;
     top: 0;
