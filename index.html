@@ -293,7 +293,7 @@
       </div>
   </footer>
   <!-- #region popup -->
-  <div class="backdrop is-hidden">
+  <div class="backdrop">
     <div class="modal">
       <button class="popup-close">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -301,46 +301,80 @@
           <path d="M7 7L21 21" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </button>
-      <h3>Leave a review about <span class="accent">our chocolate</span></h3>
+      <h3 class="papup-title">Leave a review about<br><span class="accent">our chocolate</span></h3>
       <form>
-        <label for="form-username">Name</label>
-        <div>
+        <label for="form-username" class="popup-label">Name</label>
+        <div class="popup-input-wrapper">
+          <svg width="24" height="24" class="popup-icon">
+            <use href="./sprite.svg#icon-user"></use>
+          </svg>
           <input 
             type="text" 
             name="form_username" 
             id="form-username"
+            class="popup-input"
+            placeholder="Username"
           >
         </div>
-        <label for="form-useremail">Email</label>
-        <div>
+        <label for="form-useremail" class="popup-label">Email</label>
+        <div class="popup-input-wrapper">
+          <svg class="popup-icon" width="24" height="24">
+            <use href="./sprite.svg#icon-mail"></use>
+          </svg>
           <input 
             type="email" 
             name="form_user" 
             id="form-useremail"
+            class="popup-input"
+            placeholder="Useremail"
           >
         </div>
-        <label for="form-userphone">Phone number</label>
-        <div>
+        <label for="form-userphone" class="popup-label" >Phone number</label>
+        <div class="popup-input-wrapper">
+          <svg width="24" height="24" class="popup-icon">
+            <use href="./sprite.svg#icon-phone"></use>
+          </svg>
           <input 
             type="tel" 
             name="form_user" 
             id="form-userphone"
+            class="popup-input"
+            placeholder="Phone number"
           >
         </div>
-        <label for="form-usercomment">Comment</label>
+        <label 
+          for="form-usercomment" 
+          class="popup-label"
+        >
+          Comment
+        </label>
         <div>
           <textarea 
             name="form_user" 
             id="form-usercomment" 
+            class="popup-textarea"
+            placeholder="Enter text"
           ></textarea>
         </div>        
-        <div>
-          <input 
-            type="checkbox" 
-            name="form_privacy" 
-            id="form-userprivacy"
+        <div class="form-checkbox-wrapper">          
+          <label 
+            class="popup-label" 
+            for="form-userprivacy"
           >
-          <label for="form-userprivacy">I accept the terms and conditions of the <a href="#" class="accent">Privacy Policy</a></label>
+            <input 
+              type="checkbox" 
+              name="form_privacy" 
+              id="form-userprivacy"  
+              class="visually-hidden"        
+            >
+          <span class="form-checkmark">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.94874 9.75422C4.38459 9.75422 4.71409 9.58685 4.93724 9.25213L9.76464 1.97702C9.84484 1.85847 9.90411 1.74167 9.94247 1.6266C9.98082 1.50805 10 1.39473 10 1.28664C10 0.986784 9.8954 0.739225 9.68619 0.543967C9.48047 0.345222 9.22594 0.24585 8.92259 0.24585C8.71339 0.24585 8.53556 0.287691 8.38912 0.371373C8.24616 0.451568 8.11018 0.591038 7.98117 0.789783L3.92782 7.15485L1.89854 4.72284C1.67887 4.4683 1.40342 4.34104 1.07218 4.34104C0.761855 4.34104 0.505579 4.44041 0.303347 4.63916C0.101116 4.8379 0 5.0872 0 5.38706C0 5.52305 0.0209205 5.65206 0.0627615 5.77409C0.108089 5.89264 0.190028 6.01642 0.308577 6.14543L3.00209 9.32012C3.24965 9.60952 3.5652 9.75422 3.94874 9.75422Z" fill="white" />
+            </svg>
+          </span>
+            I accept the terms and conditions of the 
+            <a href="#" class="accent">Privacy Policy</a>
+          </label>
         </div>
         <button type="submit" class="button button-primary">Send</button>        
       </form>
