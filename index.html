@@ -17,7 +17,7 @@
   <header class="header">
     <div class="container header-container">
       <a class="header-logo" href="./index.html">
-        <span class="header-logo-accent">SIMPLY</span> CHOCOLATE 
+        <span class="header-logo-accent">SIMPLY</span> CHOCOLATE
         <svg class="header-logo-item" width="24" height="24">
           <use href="./sprite.svg#icon-chocolate-icon"></use>
         </svg>
@@ -39,16 +39,19 @@
             <svg class="header-social-icon" width="24" height="24">
               <use href="./sprite.svg#icon-instagram"></use>
             </svg>
-          </a>          
+          </a>
         </li>
         <li class="header-socials-item">
           <a href="https://www.twitter.com/" target="_blank">
             <svg class="header-social-icon" width="24" height="24">
               <use href="./sprite.svg#icon-twitter"></use>
             </svg>
-          </a>    
+          </a>
         </li>
       </ul>
+      <button class="header-burger-button" data-modal-open>
+        <img src="./images/icons/menu-icon.svg" alt="">
+      </button>
     </div>
   </header>
   <main>
@@ -77,14 +80,14 @@
                   <use href="./sprite.svg#icon-arrow-down"></use>
                 </svg>
               </span>
-              
+
             </a>
           </div>
         </div>
       </div>
     </section>
     <!-- #endregion hero banner -->
-    
+
     <!-- #region benefits -->
     <section class="section benefits">
       <div class="container">
@@ -139,12 +142,12 @@
         </p>
         <ul class="sensation-list">
           <li class="sensation-list-item">
-            <img 
-              src="./images/kisspng-milk.png" 
-              width="206" 
-              height="160" 
+            <img
+              src="./images/kisspng-milk.png"
+              width="206"
+              height="160"
               alt="Milk chocolate"
-            >            
+            >
             <h3 class="sensation-list-subtitle">
               Milk chocolate
             </h3>
@@ -215,7 +218,7 @@
             </ul>
           </div>
         </div>
-      </div>  
+      </div>
     </section>
     <!-- #endregion made -->
 
@@ -247,7 +250,7 @@
     </section>
     <!-- #endregion is loved -->
 
-  </main> 
+  </main>
   <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top-section">
@@ -278,7 +281,7 @@
               <a href="#loved" class="footer-bottom-list-item">Chocolate is loved</a>
             </li>
           </ul>
-          <form 
+          <form
             name="subscribe_form"
           >
             <input
@@ -287,8 +290,8 @@
               type="email"
               name="subscribe_email"
             >
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               class="button button-primary"
             >
               Subscribe
@@ -313,9 +316,9 @@
           <svg width="24" height="24" class="popup-icon">
             <use href="./sprite.svg#icon-user"></use>
           </svg>
-          <input 
-            type="text" 
-            name="form_username" 
+          <input
+            type="text"
+            name="form_username"
             id="form-username"
             class="popup-input"
             placeholder="Username"
@@ -326,9 +329,9 @@
           <svg class="popup-icon" width="24" height="24">
             <use href="./sprite.svg#icon-mail"></use>
           </svg>
-          <input 
-            type="email" 
-            name="form_user" 
+          <input
+            type="email"
+            name="form_user"
             id="form-useremail"
             class="popup-input"
             placeholder="Useremail"
@@ -339,54 +342,84 @@
           <svg width="24" height="24" class="popup-icon">
             <use href="./sprite.svg#icon-phone"></use>
           </svg>
-          <input 
-            type="tel" 
-            name="form_user" 
+          <input
+            type="tel"
+            name="form_user"
             id="form-userphone"
             class="popup-input"
             placeholder="Phone number"
           >
         </div>
-        <label 
-          for="form-usercomment" 
+        <label
+          for="form-usercomment"
           class="popup-label"
         >
           Comment
         </label>
         <div>
-          <textarea 
-            name="form_user" 
-            id="form-usercomment" 
+          <textarea
+            name="form_user"
+            id="form-usercomment"
             class="popup-textarea"
             placeholder="Enter text"
           ></textarea>
-        </div>        
-        <div class="form-checkbox-wrapper">          
-          <label 
-            class="popup-label" 
+        </div>
+        <div class="form-checkbox-wrapper">
+          <label
+            class="popup-label"
             for="form-userprivacy"
           >
-            <input 
-              type="checkbox" 
-              name="form_privacy" 
-              id="form-userprivacy"  
-              class="visually-hidden"        
+            <input
+              type="checkbox"
+              name="form_privacy"
+              id="form-userprivacy"
+              class="visually-hidden"
             >
           <span class="form-checkmark">
             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3.94874 9.75422C4.38459 9.75422 4.71409 9.58685 4.93724 9.25213L9.76464 1.97702C9.84484 1.85847 9.90411 1.74167 9.94247 1.6266C9.98082 1.50805 10 1.39473 10 1.28664C10 0.986784 9.8954 0.739225 9.68619 0.543967C9.48047 0.345222 9.22594 0.24585 8.92259 0.24585C8.71339 0.24585 8.53556 0.287691 8.38912 0.371373C8.24616 0.451568 8.11018 0.591038 7.98117 0.789783L3.92782 7.15485L1.89854 4.72284C1.67887 4.4683 1.40342 4.34104 1.07218 4.34104C0.761855 4.34104 0.505579 4.44041 0.303347 4.63916C0.101116 4.8379 0 5.0872 0 5.38706C0 5.52305 0.0209205 5.65206 0.0627615 5.77409C0.108089 5.89264 0.190028 6.01642 0.308577 6.14543L3.00209 9.32012C3.24965 9.60952 3.5652 9.75422 3.94874 9.75422Z" fill="white" />
             </svg>
           </span>
-            I accept the terms and conditions of the 
+            I accept the terms and conditions of the
             <a href="#" class="accent">Privacy Policy</a>
           </label>
         </div>
-        <button type="submit" class="button button-primary">Send</button>        
+        <button type="submit" class="button button-primary">Send</button>
       </form>
     </div>
-  </div>  
+  </div>
   <!-- #endregion popup -->
 
+
+  <!-- mobile-menu -->
+
+  <div class="mobile-menu-wrap" data-modal>
+    <div class="header-mob-menu">
+      <button class="header-mob-close" data-modal-close>X</button>
+      <ul class="header-mob-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">How it’s made?</a></li>
+        <li><a href="#">Chocolate is loved</a></li>
+      </ul>
+
+      <ul class="header-mob-social">
+        <li>
+          <svg class="header-social-icon" width="24" height="24">
+            <use href="./sprite.svg#icon-twitter"></use>
+          </svg>
+        </li>
+        <li>
+          <svg class="header-social-icon" width="24" height="24">
+            <use href="./sprite.svg#icon-instagram"></use>
+          </svg>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
 

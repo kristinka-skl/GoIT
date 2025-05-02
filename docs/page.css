@@ -1,70 +1,70 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 5px 20px;
+  padding: 5px 20px;
 }
 
 h1 {
-    color: blue;
-    margin-bottom: 40px;
+  color: blue;
+  margin-bottom: 40px;
 }
 
 img {
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
 
 .media {
-    width: 325px;
-    min-height: 400px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("../images/chocolate-banner-mob.jpg");
+  width: 325px;
+  min-height: 400px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/chocolate-banner-mob.jpg");
+}
+
+/* High-res mobile */
+@media (min-resolution: 192dpi) {
+  .media {
+    background-image: url("../images/chocolate-banner-mob-2x.jpg");
   }
-  
-  /* High-res mobile */
-  @media (min-resolution: 192dpi) {
-    .media {
-      background-image: url("../images/chocolate-banner-mob-2x.jpg");
-    }
-  }
-  
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
-    .media {
-      width: 678px;
-      background-image: url("../images/chocolate-banner-tab.jpg");
-    }
+  .media {
+    width: 678px;
+    background-image: url("../images/chocolate-banner-tab.jpg");
+  }
 
-    @media (min-resolution: 192dpi) {
-        .media {
-          background-image: url("../images/chocolate-banner-tab@2x.jpg");
-        }
+  @media (min-resolution: 192dpi) {
+    .media {
+      background-image: url("../images/chocolate-banner-tab@2x.jpg");
     }
+  }
 }
-    
+
 /* Desktop */
 @media screen and (min-width: 1200px) {
-    .media {
-      width: 1200px;
-      background-image: url("../images/chocolate-banner.jpg");
-    }
+  .media {
+    width: 1200px;
+    background-image: url("../images/chocolate-banner.jpg");
+  }
 
-    @media (min-resolution: 192dpi) {
-        .media {
-          background-image: url("../images/chocolate-banner@2x.jpg");
-        }
+  @media (min-resolution: 192dpi) {
+    .media {
+      background-image: url("../images/chocolate-banner@2x.jpg");
     }
+  }
 }
-  
-  
+
+
 
 
 

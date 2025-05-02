@@ -36,7 +36,7 @@ a {
 button {
     font-family: inherit;
     color: currentColor;
-    cursor: pointer;    
+    cursor: pointer;
     border: none;
     font-weight: 600;
     font-size: 14px;
@@ -55,7 +55,7 @@ button {
 
 .button-primary {
     background-color: var(--accent-color);
-    color: var(--light-color);    
+    color: var(--light-color);
     border: none;
 }
 
@@ -103,9 +103,9 @@ html {
 }
 
 body {
-    font-family: var(--primary-font);  
+    font-family: var(--primary-font);
     background-color: var(--light-color);
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 .container {
@@ -172,12 +172,13 @@ body {
 
 .header-logo {
     display: flex;
-    align-items: center;   
-    gap: 4px; 
+    align-items: center;
+    gap: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.11;
     letter-spacing: -0.03em;
+    padding: 24px 0;
 }
 
 .header-logo-accent {
@@ -185,14 +186,21 @@ body {
 }
 
 .header-list-nav {
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-grow: 1;
     justify-content: flex-end;
     gap: 24px;
     padding-right: 90px;
 }
 
-.header-nav-item {    
+@media only screen and (min-width: 768px) {
+    .header-list-nav {
+        display: flex;
+    }
+}
+
+.header-nav-item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -210,9 +218,15 @@ body {
 }
 
 .header-list-socials {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header-list-socials {
+        display: flex;
+    }
 }
 
 .header-socials-item {
@@ -231,9 +245,14 @@ body {
     stroke: var(--accent-color);
 }
 
+.header-burger-button {
+    background-color: transparent;
+    outline: none;
+}
+
 /* hero */
 .hero {
-    
+
 }
 
 .hero-section {
@@ -274,7 +293,7 @@ body {
     gap: 20px;
 }
 
-.hero-scroll-btn {    
+.hero-scroll-btn {
     display: inline-flex;
     align-items: center;
     gap: 14px;
@@ -307,7 +326,7 @@ body {
 .hero-scroll-btn:hover .hero-scroll-icon-wrapper,
 .hero-scroll-btn:focus .hero-scroll-icon-wrapper {
     background-color: var(--accent-color);
-    
+
 }
 
 .hero-scroll-icon {
@@ -498,12 +517,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(100%);   
+    transform: translateY(100%);
     transition: transform 500ms linear;
 }
 
 .sensation-list-item:hover .ovrlay {
-    transform: translateY(0);    
+    transform: translateY(0);
 }
 
 .ovrlay-text {
@@ -527,7 +546,7 @@ body {
 }
 
 .sensation-list-item:nth-child(odd) {
-    color: var(--light-color);    
+    color: var(--light-color);
 }
 
 .sensation-list-subtitle {
@@ -575,7 +594,7 @@ body {
     letter-spacing: -0.02em;
     display: flex;
     align-items: baseline;
-    gap: 8px;    
+    gap: 8px;
 }
 
 .made-list-item::before {
@@ -748,7 +767,7 @@ body {
 
 .popup-input-wrapper {
     position: relative;
-    margin-bottom: 18px;    
+    margin-bottom: 18px;
 }
 
 
@@ -796,10 +815,10 @@ body {
     border-radius: 6px;
     border: 1px solid rgba(17, 17, 17, 0.14);
     height: 20px;
-    width: 20px;    
+    width: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
 .form-checkbox-wrapper input:checked ~ .form-checkmark {
@@ -811,6 +830,65 @@ body {
     align-items: center;
     gap: 12px;
     margin-bottom: 0;
+}
+
+.mobile-menu-wrap {
+    background-color: rgba(0,0,0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .3s;
+}
+
+.header-mob-menu {
+    height: 100%;
+    width: 220px;
+    background-color: #1E1823;
+    margin-left: auto;
+
+    padding: 136px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-mob-close {
+    color: #eceded;
+    font-size: 22px;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.header-mob-nav {
+    padding-right: 28px;
+}
+
+.header-mob-nav li {
+    margin-bottom: 24px;
+}
+
+.header-mob-social {
+    display: flex;
+    gap: 18px;
+}
+
+.mobile-menu-wrap ul li a {
+    color: var(--light-color);
+}
+
+.mobile-menu-wrap ul li svg {
+    fill: transparent;
+    stroke: var(--light-color);
+}
+
+.is-open {
+    opacity: 1;
 }
 
 
